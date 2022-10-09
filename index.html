@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP JS Falleti</title>
+        <link rel="stylesheet" href="./CSS/styles.css" type="text/css">
+        <script src="./JS/script.js"></script>
+    </head>
+    <body>  
+        <h1>Trabajo Practico JS  </h1>
+        <h2> Alumna: Nazarena Falleti </h2> 
+        <h2> Curso: 5to 3ra </h2> 
+
+        <ol>
+            <li>¿Qué versiones de JavaScript hay en el mercado?.</li>
+            <ul>
+                <li>JavaScript 1.0</li>
+                <li>JavaScript 1.1</li>
+                <li>JavaScript 1.2</li>
+                <li>JavaScript 1.3</li>
+                <li>JavaScript 1.4</li>
+                <li>JavaScript 1.5</li>
+                <li>JavaScript 1.6</li>
+                <li>JavaScript 1.7</li>
+            </ul>
+            <li>¿Cómo se integra JavaScript a HTML?.</li>
+            <p> La primera forma de insertar JavaScript en HTML es directa. Puedes hacerlo utilizando la etiqueta "script" "script"
+                que debe envolver todo el código JS que escribas. Se puede agregar el código JS:
+                <ul>
+                   <li>Entre las etiquetas "head"</li>
+                   <li>Entre las etiquetas </li>
+                </ul>
+                <br/>
+                Dependiendo de dónde agregues el código JavaScript en tu archivo HTML, la carga será diferente. Por lo general se recomienda agregarlo en la sección "head" para que permanezca separado del contenido de tu archivo HTML. </p>
+
+             <li>¿Cómo es el manejo de las variables, tipos de datos y expresiones regulares en JS?.</li>
+
+              <p>En Javascript disponemos de los siguientes tipos de datos principales: </p>
+              <h3> Tipo de datos: </h3>
+              <p> Number es un Valor numérico (enteros, decimales, etc...)por ejemplo ,42</p>
+              <p> BigInt es un Valor numérico grande, por ejemplo 1234567890123456789n  </p>
+              <p> String es un Valor de texto (cadenas de texto, carácteres, etc...), por ejemplo 'MZ' </p>
+              <p> Boolean es un	Valor booleano (valores verdadero o falso), por ejemplo 	true </p>
+              <p> undefined es un Valor sin definir (variable sin inicializar), por ejemplo	undefined </p>
+              <p> Function es un Función (función guardada en una variable), por ejemplo	function() {} </p>
+              <p> Symbol es un Símbolo (valor único), por ejemplo 	Symbol(1) </p>
+              <p> Object es un Objeto (estructura más compleja), por ejemplo {} </p>
+              <br/>
+              <p> Las palabras clave en JavaScript son palabras reservadas. Cuando usas la palabra clave var, 
+                  le estás diciendo a JavaScript que vas a declarar una variable.</p>
+              <p> Al usar var, las variables pueden ser reasignadas. Demostraremos esto primeramente declarando una nueva variable, 
+                  nombre, y asignándole el valor de Nazarena .</p>
+              <p> En las actualizaciones recientes a JavaScript (ECMAScript2015),
+                  const y let fueron creadas como otras palabras clave para declarar variables.</p>
+                  Let, como const, tiene alcance de bloque. Si reemplazas const por let en nuestro ejemplo previo de dobleDeEdad, funcionaría igual.
+
+                <p> embargo, let es diferente de const de un modo fundamental. Las variables declaradas con la palabra clave let pueden volver a ser declaradas, a diferencia de const.</p>
+              
+               
+            <li>¿Cómo son todas las formas de declaración de funciones en JS?.</li>
+            <p>Las formas que existen son: </p>
+            <ul>
+                <li>mediante "function": <br/>
+                    function square(number) { <br/>
+                        return number * number;<br/>
+                    }<br/>
+                </li>
+                <li>Las funciones tambien pueden ser anonimas, no si o si tener un nombre por ejemplo,la funcion square, que se puede definir como: <br/>
+                    const square = function(number) { return number * number } <br/>
+                    var x = square(4) // x obtiene el valor 16<br/>
+                </li>
+                <li>Tambien existe la funcion llamada map que se encarga de recibir una función como primer argumento y un arreglo como segundo argumento.
+                    function map(f, a) { <br/>
+                    let result = []; // Crea un nuevo arreglo<br/>
+                    let i; // Declara una variable<br/>
+                    for (i = 0; i != a.length; i++)<br/>
+                    result[i] = f(a[i]);<br/>
+                    return result;<br/>
+                    }<br/>
+                </li>
+                <li> Otra forma es cuando una funcion se puede definir en funcion de una condicion.Por ejemplo, la siguiente definición de función define myFunc solo si num es igual a 0: <br/>
+                    var myFunc;<br/>
+                    if (num === 0) { <br/>
+                    myFunc = function(theObject) { <br/>
+                    theObject.make = 'Toyota';<br/>
+                        }<br/>
+                    }<br/>
+                </li>
+            </ul>
+            <li>¿Cuáles son los operadores y conversión entre tipos?.</li>
+            <p> Los operadores pueden ser aritmeticos o de asignacion: </p>
+            <ul>
+                <li>
+                    Aritmeticos:
+                    <ul>
+                        <li>Suma "+" </li>
+                        <li>Resta "-"</li>
+                        <li>Multiplicacion "*"</li>
+                        <li>Division "/" </li>
+                        <li>Potencia "^"</li>
+                        <li>Modulo "%"</li>
+                        <li>Incremento "++"</li>
+                        <li>Decremento "--"</li>
+                    </ul>
+                </li>
+                <li>
+                    Asignacion:
+                    <ul>
+                        <li>"="</li>
+                        <li>"+="</li>
+                        <li>"-="</li>
+                        <li>"*="</li>
+                        <li>"/="</li>
+                        <li>"%="</li>
+                        <li>"**="</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Conversion de tipo:
+                <ul>
+                    <li>Numero a string: "String(numero)" o "numero.toString()</li>
+                    <li>String a numero: "Number(string)"</li>
+                    <li>String a float: "parseFloat(string)"</li>
+                    <li>String a entero: "parseInt(string)"</li>
+                    <li>String o numero a booleano: "Number(true)" o "String(false)"</li>
+                </ul>
+            </p>
+            <li>¿Cuáles son las estructura de control de JS?.</li>
+            <p>
+                Las estrucutras de control son:
+                <ul>
+                    <li>
+                        if(condicion){ codigo }   
+                    </li>
+                    <li>
+                        while(condicion){ codigo }
+                    </li>
+                    <li>
+                        do{ codigo } while(condicion);
+                    </li>
+                    <li>
+                        for(a = 0; a < valorMaximo; c+=1){ codigo }
+                    </li>
+                    <li>
+                        switch(variable){ <br/>
+                            case 1: <br/>
+                            ----codigo <br/>
+                            ----break; <br/>
+                            case 2: <br/>
+                            ----codigo <br/>
+                            ----break; <br/>
+                            case 3: <br/>
+                            ----codigo <br/>
+                            ----break; <br/>
+                        }
+                    </li>
+                </ul>
+            </p>
+            <li>¿Qué es el objeto dom en JS? Y ¿Cómo trabaja?.</li>
+            <p>  El dom es como un arbol de objetos, es decir la estructura del documento HTML, que esta formado por muchas etiquetas anidadas dentro de otras y asi se arma el arbol de etiquetas que es llamada DOM.En Javascript, DOM tambien se refiere a una estructura, que podemos modificar desde Javascript, agregando nuevas etiquetas, modificando o eliminando otras, cambiando sus atributos HTML, añadiendo clases, cambiando el contenido de texto, etc.</p>
+            <p>En Javascript, la forma de acceder al DOM es a través de un objeto llamado document, que representa el árbol DOM de la página o pestaña del navegador donde nos encontramos. En su interior pueden existir varios tipos de elementos, pero principalmente serán element o node :</p>
+            <ul>
+                <li>Element: es la represetacion generica  de una etiqueta HTMLELEMENT. </li>
+                <li>Node: Es una unidad mas basica ,com po ejemplo element o un nodo de texto.</li>
+            </ul>
+            <li>¿Qué función tiene en JS el Object Map?.</li>
+            <p> Un Map,es un grupo de pares clave-valor que se puede usar cualquier tipo de datos como clave y que se encarga de mantener el orden de sus entradas. En los Map se integran elementos de Object (un grupo único de pares clave-valor) como de Array (un grupo ordenado), pero son más parecidos a los Object.  </p>
+            <li>¿Cuáles son todos los eventos que trabaja JS?.</li>
+            <p> Cada elemento XHTML tiene definida su propia lista de posibles eventos que se le pueden asignar.El nombre de los eventos se construye mediante el prefijo on, seguido del nombre en inglés de la acción asociada al evento.</p>
+            <ul>
+                <li>onblur (Un elemento pierde el foco) elementos para los que estan definidos ,button, input, label, select, textarea, body </li>
+                <li>onchange (Un elemento ha sido modificado)elementos para los que estan definidos,input, select, textarea </li> 
+                <li>onclick (Pulsar y soltar el ratón)Todos los elementos estan definidos.</li> 
+                <li>ondblclick (Pulsar dos veces seguidas con el ratón)Todos los elementos estan definidos.</li>
+                <li>onreset (Inicializar el formulario) elementos para los que estan definidos ,form </li>
+            </ul>
+        </ol>
+
+        <div>
+            <h4>Comprueba que no eres un robot</h4>
+            <form name="robot" action="" method="GET">Ingrese 2 numeros y su suma:<br/>
+                <input type="text" name="numero1" value="" placeholder="Primer valor"><br/>
+                <input type="text" name="numero2" value="" placeholder="Segundo valor"><br/>
+                <input type="text" name="suma" value="" placeholder="Resultado">
+                <input type="button" name="button" value="No soy un robot" onClick="formulario(this.form)">
+            </form>
+        </div> 
+
+        <h3>Apruebeme profe 😂 perdon el retraso 🙏 jajajaj</h3>
+    </body>
+</html>
